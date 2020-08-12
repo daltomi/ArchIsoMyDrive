@@ -1,0 +1,504 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tchecksumsform.btncalculate.caption
+msgid "&Calculate"
+msgstr ""
+
+#: tchecksumsform.btnclose.caption
+msgctxt "tchecksumsform.btnclose.caption"
+msgid "&Close"
+msgstr ""
+
+#: tchecksumsform.caption
+msgid "Checksum"
+msgstr ""
+
+#: tchecksumsform.label1.caption
+msgid "Checksum:"
+msgstr ""
+
+#: tchecksumsform.label3.caption
+msgid "Verify:"
+msgstr ""
+
+#: tchecksumsform.label4.caption
+msgid "Optional:"
+msgstr ""
+
+#: tchecksumsform.label5.caption
+msgid "Checksums ..."
+msgstr ""
+
+#: tclonedeviceform.btncancel.caption
+msgctxt "tclonedeviceform.btncancel.caption"
+msgid "&Cancel"
+msgstr ""
+
+#: tclonedeviceform.label1.caption
+msgid "Cloning device ..."
+msgstr ""
+
+#: tdeviceinfoform.btnclose.caption
+msgctxt "tdeviceinfoform.btnclose.caption"
+msgid "&Close"
+msgstr ""
+
+#: tdeviceinfoform.btnsave.caption
+msgctxt "tdeviceinfoform.btnsave.caption"
+msgid "&Save..."
+msgstr ""
+
+#: tdeviceinfoform.label1.caption
+msgctxt "tdeviceinfoform.label1.caption"
+msgid "Device:"
+msgstr ""
+
+#: tdeviceinfoform.label10.caption
+msgid "Readahead:"
+msgstr ""
+
+#: tdeviceinfoform.label11.caption
+msgctxt "tdeviceinfoform.label11.caption"
+msgid "Size:"
+msgstr ""
+
+#: tdeviceinfoform.label12.caption
+msgid "Device information ..."
+msgstr ""
+
+#: tdeviceinfoform.label2.caption
+msgctxt "tdeviceinfoform.label2.caption"
+msgid "Vendor ID:"
+msgstr ""
+
+#: tdeviceinfoform.label3.caption
+msgctxt "tdeviceinfoform.label3.caption"
+msgid "Product:"
+msgstr ""
+
+#: tdeviceinfoform.label4.caption
+msgctxt "tdeviceinfoform.label4.caption"
+msgid "Product ID:"
+msgstr ""
+
+#: tdeviceinfoform.label5.caption
+msgctxt "tdeviceinfoform.label5.caption"
+msgid "Manufacturer:"
+msgstr ""
+
+#: tdeviceinfoform.label6.caption
+msgid "Serial :"
+msgstr ""
+
+#: tdeviceinfoform.label7.caption
+msgctxt "tdeviceinfoform.label7.caption"
+msgid "Version:"
+msgstr ""
+
+#: tdeviceinfoform.label8.caption
+msgctxt "tdeviceinfoform.label8.caption"
+msgid "Power max.:"
+msgstr ""
+
+#: tdeviceinfoform.label9.caption
+msgid "Bus:"
+msgstr ""
+
+#: tmainform.btnisoopen.caption
+msgid "Open"
+msgstr ""
+
+#: tmainform.label1.caption
+msgctxt "tmainform.label1.caption"
+msgid "1 - Select the USB drive:"
+msgstr ""
+
+#: tmainform.label2.caption
+msgctxt "tmainform.label2.caption"
+msgid "2 - Open (or drag and drop) an .iso or .img file:"
+msgstr ""
+
+#: tmainform.label3.caption
+msgctxt "tmainform.label3.caption"
+msgid "3 - Start the copy:"
+msgstr ""
+
+#: tmainform.label4.caption
+msgctxt "tmainform.label4.caption"
+msgid "Progress:"
+msgstr ""
+
+#: tmainform.label5.caption
+msgctxt "tmainform.label5.caption"
+msgid "Status:"
+msgstr ""
+
+#: tmainform.lblcopypercent.caption
+msgid "0 %"
+msgstr ""
+
+#: tmainform.lblisosize.caption
+msgctxt "tmainform.lblisosize.caption"
+msgid "0 KiB"
+msgstr ""
+
+#: tmainform.lblusbname.caption
+msgctxt "tmainform.lblusbname.caption"
+msgid "Device:"
+msgstr ""
+
+#: tmainform.lblusbsize.caption
+msgctxt "tmainform.lblusbsize.caption"
+msgid "0 KiB"
+msgstr ""
+
+#: tmainform.menufile.caption
+msgctxt "tmainform.menufile.caption"
+msgid "&File"
+msgstr ""
+
+#: tmainform.menufileopeniso.caption
+msgid "Open ISO..."
+msgstr ""
+
+#: tmainform.menuquit.caption
+msgid "&Quit"
+msgstr ""
+
+#: tmainform.menutoolclonedevice.caption
+msgid "Clone to..."
+msgstr ""
+
+#: tmainform.menutooldevice.caption
+msgid "Device"
+msgstr ""
+
+#: tmainform.menutoolisochecksums.caption
+msgid "Checksums..."
+msgstr ""
+
+#: tmainform.menutoolisomount.caption
+msgid "Mount..."
+msgstr ""
+
+#: tmainform.menutools.caption
+msgid "&Tools"
+msgstr ""
+
+#: tmainform.menuver.caption
+msgid "&View"
+msgstr ""
+
+#: tmainform.menuverinfo.caption
+msgid "Device information..."
+msgstr ""
+
+#: tmountform.btnsave.caption
+msgid "Save report..."
+msgstr ""
+
+#: tmountform.label1.caption
+msgid ""
+"The partitions found in the ISO file are listed below.\n"
+"Double click to mount/umount.\n"
+"Only one partition at a time.\n"
+msgstr ""
+
+#: tmountform.label2.caption
+msgid "Mount partitions ..."
+msgstr ""
+
+#: tmountform.lsvpartlist.columns[0].caption
+msgid "Part No"
+msgstr ""
+
+#: tmountform.lsvpartlist.columns[1].caption
+msgid "Start"
+msgstr ""
+
+#: tmountform.lsvpartlist.columns[2].caption
+msgctxt "tmountform.lsvpartlist.columns[2].caption"
+msgid "Size"
+msgstr ""
+
+#: tmountform.lsvpartlist.columns[3].caption
+msgctxt "tmountform.lsvpartlist.columns[3].caption"
+msgid "UUID"
+msgstr ""
+
+#: tmountform.lsvpartlist.columns[4].caption
+msgctxt "tmountform.lsvpartlist.columns[4].caption"
+msgid "Mount Point"
+msgstr ""
+
+#: uresources.rsaskexit
+msgid ""
+"The ISO file is currently being copied to device.\n"
+"Do you want to leave?\n"
+msgstr ""
+
+#: uresources.rschecksummatch
+msgid "The checksum matches."
+msgstr ""
+
+#: uresources.rschecksumnotmatch
+msgid "The checksum does not matches."
+msgstr ""
+
+#: uresources.rschecksumtitle
+msgid "Checksums - ArchIsoMyDrive"
+msgstr ""
+
+#: uresources.rsclonedescription
+msgid ""
+"Device: %s\n"
+"\n"
+"ISO: %s\n"
+msgstr ""
+
+#: uresources.rscloneerrorcancel
+msgid "The cloning of the device has been canceled."
+msgstr ""
+
+#: uresources.rscloneprogress
+msgctxt "uresources.rscloneprogress"
+msgid "Progress: "
+msgstr ""
+
+#: uresources.rsclonetitle
+msgid "Clone Device - ArchIsoMyDrive"
+msgstr ""
+
+#: uresources.rsclose
+msgctxt "uresources.rsclose"
+msgid "&Close"
+msgstr ""
+
+#: uresources.rsconfirmdlgtitle
+msgid "Confirmation - ArchIsoMyDrive"
+msgstr ""
+
+#: uresources.rscopymessage
+msgid ""
+"Do you want to start with the format?\n"
+"You will lose the device data.\n"
+msgstr ""
+
+#: uresources.rsdevice
+msgctxt "uresources.rsdevice"
+msgid "Device:"
+msgstr ""
+
+#: uresources.rsdlgopenisotitle
+msgid "Open an ISO / IMG file - ArchIsoMyDrive"
+msgstr ""
+
+#: uresources.rsendcopyok
+msgid "The copy finished successfully."
+msgstr ""
+
+#: uresources.rserrnotroot
+msgid "You must have administrator permissions."
+msgstr ""
+
+#: uresources.rserrordlgtitle
+msgid "Error - ArchIsoMyDrive"
+msgstr ""
+
+#: uresources.rserrordropfile
+msgid "Only .iso or .img files are accepted."
+msgstr ""
+
+#: uresources.rserrorfilenotexist
+msgid "The file does not exists:"
+msgstr ""
+
+#: uresources.rserrorisocero
+msgid "The size of the ISO file is equal to zero."
+msgstr ""
+
+#: uresources.rserrorisonotopen
+msgid "Unable to open file."
+msgstr ""
+
+#: uresources.rserrorsizedevice
+msgid ""
+"The size of the device is smaller\n"
+"than the one in the ISO file.\n"
+msgstr ""
+
+#: uresources.rserruniqueinstance
+msgid "ArchIsoMyDrive is already running."
+msgstr ""
+
+#: uresources.rse_dev_or
+msgctxt "uresources.rse_dev_or"
+msgid "The device could not be opened for reading: "
+msgstr ""
+
+#: uresources.rse_dev_ow
+msgctxt "uresources.rse_dev_ow"
+msgid "The device could not be opened for writing: "
+msgstr ""
+
+#: uresources.rse_dev_r
+msgid "Could not read from the device: "
+msgstr ""
+
+#: uresources.rse_dev_w
+msgid "Could not write to the device: "
+msgstr ""
+
+#: uresources.rse_iso_or
+msgctxt "uresources.rse_iso_or"
+msgid "The ISO file could not be opened for reading: "
+msgstr ""
+
+#: uresources.rse_iso_ow
+msgctxt "uresources.rse_iso_ow"
+msgid "The ISO file could not be opened for writing: "
+msgstr ""
+
+#: uresources.rse_iso_r
+msgid "The ISO file could not be read: "
+msgstr ""
+
+#: uresources.rse_iso_w
+msgid "Could not write to the ISO file: "
+msgstr ""
+
+#: uresources.rsmanufacturer
+msgctxt "uresources.rsmanufacturer"
+msgid "Manufacturer:"
+msgstr ""
+
+#: uresources.rsmounterrormountonlyone
+msgid ""
+"There is a mounted partition.\n"
+"Only one partition at a time.\n"
+msgstr ""
+
+#: uresources.rsmounterrornoclose
+msgid "There is a mounted partition, unmount it before leaving."
+msgstr ""
+
+#: uresources.rsmounterrornomount
+msgid "Failed to mount the partition."
+msgstr ""
+
+#: uresources.rsmounterrornopartitions
+msgid "The ISO file has no partition."
+msgstr ""
+
+#: uresources.rsmounterrornoumount
+msgid "Failed to umount the partition."
+msgstr ""
+
+#: uresources.rsmounterrorsavereport
+msgid "Failed to save report."
+msgstr ""
+
+#: uresources.rsmounttitle
+msgid "Mount ISO - ArchIsoMyDrive"
+msgstr ""
+
+#: uresources.rsoverwritefile
+msgid ""
+"The file already exists.\n"
+"Do you want to overwrite the file?\n"
+msgstr ""
+
+#: uresources.rsparamcorrect
+msgid "Valid parameter"
+msgstr ""
+
+#: uresources.rsparamhelp
+msgid "Help."
+msgstr ""
+
+#: uresources.rsparamunknown
+msgid "Unknown parameter."
+msgstr ""
+
+#: uresources.rspowermax
+msgctxt "uresources.rspowermax"
+msgid "Power max.:"
+msgstr ""
+
+#: uresources.rsproduct
+msgctxt "uresources.rsproduct"
+msgid "Product:"
+msgstr ""
+
+#: uresources.rsproductid
+msgctxt "uresources.rsproductid"
+msgid "Product ID:"
+msgstr ""
+
+#: uresources.rsprogress
+msgctxt "uresources.rsprogress"
+msgid "Progress: "
+msgstr ""
+
+#: uresources.rssave
+msgctxt "uresources.rssave"
+msgid "&Save..."
+msgstr ""
+
+#: uresources.rssaveisofile
+msgid "Save ISO file - ArchIsoMyDrive"
+msgstr ""
+
+#: uresources.rsserial
+msgid "Serial:"
+msgstr ""
+
+#: uresources.rssize
+msgctxt "uresources.rssize"
+msgid "Size:"
+msgstr ""
+
+#: uresources.rsstatuscancel
+msgid "Cancelled."
+msgstr ""
+
+#: uresources.rsstatuscopying
+msgid "Copying..."
+msgstr ""
+
+#: uresources.rsstatuserror
+msgid "Error."
+msgstr ""
+
+#: uresources.rsstatuspause
+msgid "Pause..."
+msgstr ""
+
+#: uresources.rsstatusterminate
+msgid "Finished."
+msgstr ""
+
+#: uresources.rsstatuswaiting
+msgctxt "uresources.rsstatuswaiting"
+msgid "Waiting."
+msgstr ""
+
+#: uresources.rsusbunity
+msgid "Device: "
+msgstr ""
+
+#: uresources.rsusbunityempty
+msgid "<none>"
+msgstr ""
+
+#: uresources.rsvendor
+msgctxt "uresources.rsvendor"
+msgid "Vendor ID:"
+msgstr ""
+
+#: uresources.rsversion
+msgctxt "uresources.rsversion"
+msgid "Version:"
+msgstr ""
+
