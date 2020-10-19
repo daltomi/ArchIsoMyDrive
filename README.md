@@ -4,7 +4,7 @@ Utilidad GUI para copiar un archivo ISO a un disco USB.
 
 Sólo para GNU/Linux.
 
-<img src="https://git.disroot.org/daltomi/ArchIsoMyDrive/raw/branch/master/screenshot/main.jpg"/>
+<img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/main.jpg"/>
 
 ____
 
@@ -18,19 +18,19 @@ ____
 
 4. Muestra información detallada del dispositivo.
 
-<img src="https://git.disroot.org/daltomi/ArchIsoMyDrive/raw/branch/master/screenshot/info.jpg"/>
+<img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/info.jpg"/>
 
 5. Permite listar y montar las particiones del archivo ISO.
 
-<img src="https://git.disroot.org/daltomi/ArchIsoMyDrive/raw/branch/master/screenshot/mount.jpg"/>
+<img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/mount.jpg"/>
 
 6. Permite generar varias sumas de verificación.
 
-<img src="https://git.disroot.org/daltomi/ArchIsoMyDrive/raw/branch/master/screenshot/checksums.jpg"/>
+<img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/checksums.jpg"/>
 
 7. Permite clonar el dispositivo hacia un archivo.
 
-<img src="https://git.disroot.org/daltomi/ArchIsoMyDrive/raw/branch/master/screenshot/clone.jpg"/>
+<img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/clone.jpg"/>
 
 
 ### Instalar como Aplicación de Escritorio
