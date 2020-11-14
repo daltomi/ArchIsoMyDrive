@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2019 daltomi <daltomi@disroot.org>
+	Copyright (c) 2019,2020 Daniel T. Borelli <daltomi@disroot.org>
 
 	This file is part of ArchIsoMyDrive.
 
