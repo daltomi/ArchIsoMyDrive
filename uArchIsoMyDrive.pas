@@ -34,8 +34,8 @@ uses
 function IsAppRunning: boolean;
 const
         CMD = 'ps -C ' + APP_BIN + ' | grep ' + APP_BIN + ' | wc -l';
-        BASH1 = '/usr/bin/bash';
-        BASH2 = '/bin/bash';
+        BASH1 = '/bin/sh';
+        BASH2 = '/usr/bin/bash';
 var
         str : String;
 begin
