@@ -59,6 +59,16 @@ begin
 
         SetDefaultLang('', '/usr/share/ArchIsoMyDrive/locale', False);
 
+
+        if Application.HasOption('h', 'help') then
+        begin
+                WriteLn(APP_TITLE_VER + LineEnding +
+                        '-h    help' + LineEnding +
+                        '-v    version' + LineEnding +
+                        '-f    filename(.iso/.img)' + LineEnding);
+                Exit;
+        end;
+
         if Application.HasOption('v', 'version') then
         begin
                 WriteLn(APP_TITLE_VER);
