@@ -1,5 +1,7 @@
 ## ArchIsoMyDrive
 
+[![Release](https://img.shields.io/github/v/release/daltomi/ArchIsoMyDrive)](https://github.com/daltomi/ArchIsoMyDrive/releases/latest)
+
 Utilidad GUI para copiar un archivo ISO a un disco USB.
 
 Sólo para GNU/Linux.
