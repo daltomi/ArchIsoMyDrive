@@ -51,7 +51,7 @@ Según el paquete de Lazarus que se instale la de **GTK2** o **Qt5**. Vea: `pacm
 
 **Librerías, dependencias**
 
-Se utiliza _libudev_ , _libmount_ , _libblkid_ y afines a los mismos, `fpc`, `lazarus`, `pgkconf`, `make`, `gcc`.
+Se utiliza _librhash_, _libudev_ , _libmount_ , _libblkid_ y afines a los mismos, `fpc`, `lazarus`, `pgkconf`, `make`, `gcc`.
 
 **Compilación**
 
