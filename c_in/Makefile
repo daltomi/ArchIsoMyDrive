@@ -22,7 +22,7 @@ CFLAGS = $(shell pkg-config --cflags udev) $(shell pkg-config --cflags mount)
 
 OBJ := c_device.o c_mnt_iso.o
 
-release: CFLAGS+= -O3 -DNDEBUG
+release: CFLAGS+= -O2 -DNDEBUG
 release: CLIBS+= -Wl,-s
 release: $(OBJ)
 

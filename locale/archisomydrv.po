@@ -134,8 +134,16 @@ msgctxt "tmainform.label5.caption"
 msgid "Status:"
 msgstr ""
 
+#: tmainform.label6.caption
+msgid "Elapsed:"
+msgstr ""
+
 #: tmainform.lblcopypercent.caption
 msgid "0 %"
+msgstr ""
+
+#: tmainform.lblelapsed.caption
+msgid "00:00:00"
 msgstr ""
 
 #: tmainform.lblisosize.caption

@@ -1,5 +1,5 @@
 {
-        Copyright (c) 2019,2020 Daniel T. Borelli <daltomi@disroot.org>
+        Copyright (c) 2019,2021 Daniel T. Borelli <danieltborelli@gmail.com>
 
         This file is part of ArchIsoMyDrive.
 
@@ -26,11 +26,11 @@ unit uMainForm;
 interface
 
 uses
-        Classes, SysUtils, FileUtil, VirtualTrees, Forms, Controls, Graphics,
+        Classes, SysUtils, FileUtil, Forms, Controls, Graphics,
         Dialogs, ExtCtrls, StdCtrls, ComCtrls, Buttons, Menus, clocale,
         uDevice, LCLIntf, InterfaceBase, LCLType, EditBtn, CTypes, Contnrs,
         uDeviceInfoForm, uResources, uChecksumsForm, uMountForm, uMntIso,
-        uCloneDeviceForm;
+        uCloneDeviceForm,DateUtils;
 
 type
 
@@ -50,9 +50,11 @@ type
                 Label3: TLabel;
                 Label4: TLabel;
                 Label5: TLabel;
+                Label6: TLabel;
                 lblStatus: TLabel;
                 lblCopyPercent: TLabel;
                 lblIsoSize: TLabel;
+                lblElapsed: TLabel;
                 lblUsbSize: TLabel;
                 lblIsoName: TLabel;
                 lblUsbName: TLabel;
@@ -71,6 +73,7 @@ type
                 menuVerInfo: TMenuItem;
                 menuQuit: TMenuItem;
                 lblVersion: TStaticText;
+                timerElapsed: TTimer;
                 procedure btnIsoOpenClick(Sender: TObject);
                 procedure btnStartClick(Sender: TObject);
                 procedure btnStopClick(Sender: TObject);
@@ -96,6 +99,8 @@ type
                 procedure FreeAllHash(A : pointer; B : pointer);
                 procedure FillListDevices(A : pointer; B : pointer);
                 procedure NewListItem(const dev : PDeviceProperty);
+                procedure TimerElapsedOn(Sender: TObject);
+                procedure StartTimer;
                 procedure ValidateActionButtons;
                 function GetIsoSize: cuint64;
                 function GetDeviceSize: cuint64;
@@ -110,6 +115,7 @@ type
                 isoFileName : string;
                 oldIsoFileName : string;
                 isoInitialDir : string;
+                timerStart: TDateTime;
 
         public
                 copyPause   : boolean;
@@ -142,7 +148,10 @@ begin
                 eid := Device_ContinueCopyIsoToDevice;
                 if  eid <> E_NO then
                 begin
+                        timerElapsed.enabled := False;
+
                         MessageDlg(rsErrorDlgTitle, Device_ProcessError(eid), mtError, [mbOk], 0);
+
                         Device_StopCopy;
                         btnStop.Enabled := False;
                         btnClose.Enabled := True;
@@ -164,7 +173,11 @@ begin
                 Application.ProcessMessages;
                 if copyRunning and (Device_GetLenCopy = 0) then
                 begin
+                       timerElapsed.enabled := False;
+                       lblStatus.Caption := rsStatusTerminate;
+
                        ShowMessage(rsEndCopyOk);
+
                        Device_StopCopy;
                        btnStop.Enabled := False;
                        btnClose.Enabled := True;
@@ -172,7 +185,6 @@ begin
                        lstBoxDevices.Enabled := True;
                        btnStart.ImageIndex := 0;
                        lblCopyPercent.Caption := '0 %';
-                       lblStatus.Caption := rsStatusTerminate;
                        copyRunning := False;
                        break;
                 end;
@@ -247,12 +259,15 @@ begin
                 begin
                         btnStart.ImageIndex := 1;
                 end;
+                timerElapsed.enabled := not copyPause;
                 RunCopyIsoToDevice;
                 Exit;
         end;
 
         if AskCopyContinue = False then
                 Exit;
+
+        StartTimer;
 
         dev := hashDevices.Find(hashDevices.NameOfIndex(lstBoxDevices.ItemIndex));
 
@@ -262,6 +277,8 @@ begin
 
         if eid <> E_NO  then
         begin
+                timerElapsed.enabled := false;
+
                 MessageDlg(rsErrorDlgTitle, Device_ProcessError(eid), mtError, [mbOk], 0);
                 btnStart.ImageIndex:= 0;
                 btnStart.Enabled := False;
@@ -284,6 +301,7 @@ begin
         lstBoxDevices.Enabled := False;
         copyPause := False;
         copyRunning := True;
+
         RunCopyIsoToDevice;
 end;
 
@@ -297,6 +315,7 @@ begin
         btnIsoOpen.Enabled := True;
         btnStart.ImageIndex := 0;
         lblStatus.Caption := rsStatusCancel;
+        timerElapsed.Enabled := False;
 
         Device_StopCopy;
 end;
@@ -398,6 +417,21 @@ begin
                 lblUsbSize.Caption := dev^.size;
         end;
 end;
+
+procedure TMainForm.StartTimer;
+begin
+     timerStart := 0;
+     timerElapsed.enabled := true;
+     lblElapsed.Caption := '00:00:00';
+end;
+
+
+procedure TMainForm.TimerElapsedOn(Sender: TObject);
+begin
+      timerStart := IncSecond(timerStart);
+      lblElapsed.Caption := formatdatetime('hh:nn:ss', timerStart);
+end;
+
 
 
 procedure TMainForm.AddItemToDevicesList(const dev: PDeviceProperty);
@@ -503,6 +537,7 @@ end;
 
 procedure TMainForm.FormCreate (Sender: TObject);
 begin
+        timerElapsed.enabled := false;
         copyPause := False;
         copyRunning := False;
         Caption := APP_TITLE;

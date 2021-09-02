@@ -144,9 +144,17 @@ msgctxt "tmainform.label5.caption"
 msgid "Status:"
 msgstr "Estado:"
 
+#: tmainform.label6.caption
+msgid "Elapsed:"
+msgstr "Transcurrido:"
+
 #: tmainform.lblcopypercent.caption
 msgid "0 %"
 msgstr "0 %"
+
+#: tmainform.lblelapsed.caption
+msgid "00:00:00"
+msgstr ""
 
 #: tmainform.lblisosize.caption
 msgctxt "tmainform.lblisosize.caption"
@@ -527,3 +535,4 @@ msgstr "Vendedor ID:"
 msgctxt "uresources.rsversion"
 msgid "Version:"
 msgstr "Versión:"
+

@@ -1,5 +1,5 @@
 {
-        Copyright (c) 2019,2020 Daniel T. Borelli <daltomi@disroot.org>
+        Copyright (c) 2019,2021 Daniel T. Borelli <danieltborelli@gmail.com>
 
         This file is part of ArchIsoMyDrive.
 
@@ -25,7 +25,7 @@ interface
 uses SysUtils;
 
 const
-        APP_VER = '5.9';
+        APP_VER = '5.10';
         APP_TITLE = 'ArchIsoMyDrive';
 {$ifopt D+}
         APP_TITLE_VER = APP_TITLE + ' v' + APP_VER + ' (devel)';
