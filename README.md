@@ -35,10 +35,6 @@ ____
 <img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/clone.jpg"/>
 
 
-### Instalar como Aplicación de Escritorio
-
-`yay -S archisomydrive`
-
 **Administrador**
 
 Se necesitan permisos de administrador para usar el programa.
