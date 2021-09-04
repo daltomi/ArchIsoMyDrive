@@ -25,7 +25,7 @@ interface
 uses SysUtils;
 
 const
-        APP_VER = '5.10';
+        APP_VER = '6.0';
         APP_TITLE = 'ArchIsoMyDrive';
 {$ifopt D+}
         APP_TITLE_VER = APP_TITLE + ' v' + APP_VER + ' (devel)';
@@ -62,12 +62,15 @@ ResourceString
 
         rsEndCopyOk = 'The copy finished successfully.';
 
+        // no todos los estatus estan en main, algunos
+        // se encuentran en otros diálogos de control.
         rsStatusTerminate = 'Finished.';
         rsStatusCopying = 'Copying...';
         rsStatusError = 'Error.';
         rsStatusPause = 'Pause...';
         rsStatusCancel = 'Cancelled.';
         rsStatusWaiting = 'Waiting.';
+        rsStatusFormatting = 'Formatting...';
 
         rsUsbUnity = 'Device: ';
         rsUsbUnityEmpty = '<none>';
@@ -92,6 +95,15 @@ ResourceString
         rsMountErrorMountOnlyOne = 'There is a mounted partition.' + LineEnding +
                                    'Only one partition at a time.';
 
+        rsFormatTitle = 'Format Device - ' + APP_TITLE;
+        rsFormatDescription = 'Device: %s' +  LineEnding +
+                               'Manufacturer: %s %s' + LineEnding +
+                               'Size: %s';
+        rsFormatErrorNoMkfs = 'No program to format was found.';
+        rsFormatErrorNoProgramFound = 'The program was not found: ';
+        rsFormatWarningSlow = 'Formatting with this file system is VERY slow.';
+        rsFormatError = 'Formatting failed. Your device is corrupt.';
+
         rsCloneTitle = 'Clone Device - ' + APP_TITLE;
         rsCloneErrorCancel = 'The cloning of the device has been canceled.';
         rsCloneDescription = 'Device: %s' + LineEnding + LineEnding + 'ISO: %s';
@@ -110,6 +122,7 @@ ResourceString
         rsSaveIsoFile = 'Save ISO file - ' + APP_TITLE;
         rsClose = '&Close';
         rsSave = '&Save...';
+        rsFormat = '&Format...';
         rsDevice = 'Device:';
         rsSize = 'Size:';
         rsVendor = 'Vendor ID:';

@@ -115,6 +115,16 @@ msgstr "Máx. Potencia:"
 msgid "Bus:"
 msgstr "Bus:"
 
+#: tformatform.caption
+msgctxt "tformatform.caption"
+msgid "Format device"
+msgstr "Formatear dispositivo"
+
+#: tformatform.label1.caption
+msgctxt "tformatform.label1.caption"
+msgid "Format device ..."
+msgstr "Formatear dispositivo ..."
+
 #: tmainform.btnisoopen.caption
 msgid "Open"
 msgstr "Abrir"
@@ -184,13 +194,20 @@ msgstr "Abrir ISO..."
 msgid "&Quit"
 msgstr "&Salir"
 
-#: tmainform.menutoolclonedevice.caption
+#: tmainform.menutooldevice.caption
+msgctxt "tmainform.menutooldevice.caption"
+msgid "Device"
+msgstr "Dispositivo"
+
+#: tmainform.menutooldeviceclone.caption
+msgctxt "tmainform.menutooldeviceclone.caption"
 msgid "Clone to..."
 msgstr "Clonar a..."
 
-#: tmainform.menutooldevice.caption
-msgid "Device"
-msgstr "Dispositivo"
+#: tmainform.menutooldeviceformat.caption
+msgctxt "tmainform.menutooldeviceformat.caption"
+msgid "Format..."
+msgstr "Formatear..."
 
 #: tmainform.menutoolisochecksums.caption
 msgid "Checksums..."
@@ -398,6 +415,41 @@ msgstr "No se pudo leer el archivo ISO: "
 msgid "Could not write to the ISO file: "
 msgstr "No se pudo escribir el archivo ISO: "
 
+#: uresources.rsformat
+msgctxt "uresources.rsformat"
+msgid "&Format..."
+msgstr "&Formatear..."
+
+#: uresources.rsformatdescription
+msgid ""
+"Device: %s\n"
+"Manufacturer: %s %s\n"
+"Size: %s\n"
+msgstr ""
+"Dispositivo: %s\n"
+"Fabricante: %s %s\n"
+"Tamaño: %s\n"
+
+#: uresources.rsformaterror
+msgid "Formatting failed. Your device is corrupt."
+msgstr "Falló al dar formato. Su dispositivo está corrupto."
+
+#: uresources.rsformaterrornomkfs
+msgid "No program to format was found."
+msgstr "Ningún programa para formatear fué encontrado."
+
+#: uresources.rsformaterrornoprogramfound
+msgid "The program was not found: "
+msgstr "No se encontró el programa: "
+
+#: uresources.rsformattitle
+msgid "Format Device - ArchIsoMyDrive"
+msgstr "Formatear Dispositivo - ArchIsoMyDrive"
+
+#: uresources.rsformatwarningslow
+msgid "Formatting with this file system is VERY slow."
+msgstr "Formatear con éste sistema de archivo es MUY lento"
+
 #: uresources.rsmanufacturer
 msgctxt "uresources.rsmanufacturer"
 msgid "Manufacturer:"
@@ -504,6 +556,11 @@ msgstr "Copiando..."
 #: uresources.rsstatuserror
 msgid "Error."
 msgstr "Error."
+
+#: uresources.rsstatusformatting
+msgctxt "uresources.rsstatusformatting"
+msgid "Formatting..."
+msgstr "Formateando..."
 
 #: uresources.rsstatuspause
 msgid "Pause..."

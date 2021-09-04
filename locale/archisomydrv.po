@@ -105,6 +105,16 @@ msgstr ""
 msgid "Bus:"
 msgstr ""
 
+#: tformatform.caption
+msgctxt "tformatform.caption"
+msgid "Format device"
+msgstr ""
+
+#: tformatform.label1.caption
+msgctxt "tformatform.label1.caption"
+msgid "Format device ..."
+msgstr ""
+
 #: tmainform.btnisoopen.caption
 msgid "Open"
 msgstr ""
@@ -174,12 +184,19 @@ msgstr ""
 msgid "&Quit"
 msgstr ""
 
-#: tmainform.menutoolclonedevice.caption
+#: tmainform.menutooldevice.caption
+msgctxt "tmainform.menutooldevice.caption"
+msgid "Device"
+msgstr ""
+
+#: tmainform.menutooldeviceclone.caption
+msgctxt "tmainform.menutooldeviceclone.caption"
 msgid "Clone to..."
 msgstr ""
 
-#: tmainform.menutooldevice.caption
-msgid "Device"
+#: tmainform.menutooldeviceformat.caption
+msgctxt "tmainform.menutooldeviceformat.caption"
+msgid "Format..."
 msgstr ""
 
 #: tmainform.menutoolisochecksums.caption
@@ -376,6 +393,38 @@ msgstr ""
 msgid "Could not write to the ISO file: "
 msgstr ""
 
+#: uresources.rsformat
+msgctxt "uresources.rsformat"
+msgid "&Format..."
+msgstr ""
+
+#: uresources.rsformatdescription
+msgid ""
+"Device: %s\n"
+"Manufacturer: %s %s\n"
+"Size: %s\n"
+msgstr ""
+
+#: uresources.rsformaterror
+msgid "Formatting failed. Your device is corrupt."
+msgstr ""
+
+#: uresources.rsformaterrornomkfs
+msgid "No program to format was found."
+msgstr ""
+
+#: uresources.rsformaterrornoprogramfound
+msgid "The program was not found: "
+msgstr ""
+
+#: uresources.rsformattitle
+msgid "Format Device - ArchIsoMyDrive"
+msgstr ""
+
+#: uresources.rsformatwarningslow
+msgid "Formatting with this file system is VERY slow."
+msgstr ""
+
 #: uresources.rsmanufacturer
 msgctxt "uresources.rsmanufacturer"
 msgid "Manufacturer:"
@@ -477,6 +526,11 @@ msgstr ""
 
 #: uresources.rsstatuserror
 msgid "Error."
+msgstr ""
+
+#: uresources.rsstatusformatting
+msgctxt "uresources.rsstatusformatting"
+msgid "Formatting..."
 msgstr ""
 
 #: uresources.rsstatuspause

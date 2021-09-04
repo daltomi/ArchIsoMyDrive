@@ -23,7 +23,7 @@ program ArchIsoMyDrive;
 uses
   cthreads,
   Interfaces, Forms, uMainForm, Process, LCLType, BaseUnix,
-  uResources, SysUtils, LCLTranslator, uMntIso;
+  uResources, SysUtils, LCLTranslator;
 
 {$R *.res}
 

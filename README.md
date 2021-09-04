@@ -8,7 +8,7 @@ Sólo para GNU/Linux.
 
 <img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/main.jpg"/>
 
-____
+
 
 #### Características:
 
@@ -34,12 +34,16 @@ ____
 
 <img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/clone.jpg"/>
 
+8. Permite dar formato al dispositivo.
+
+<img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/format.jpg"/>
+
 
 **Administrador**
 
 Se necesitan permisos de administrador para usar el programa.
 
-____
+
 
 ### Desarrollo
 
@@ -52,6 +56,10 @@ Según el paquete de Lazarus que se instale la de **GTK2** o **Qt5**. Vea: `pacm
 **Librerías, dependencias**
 
 Se utiliza _librhash_, _libudev_ , _libmount_ , _libblkid_ y afines a los mismos, `fpc`, `lazarus`, `pgkconf`, `make`, `gcc`.
+
+** Programas externos **
+
+Los programas externos se utilizan con la herramienta *Formato...*: `sfdisk`, `bash` y `mkfs.*`
 
 **Compilación**
 

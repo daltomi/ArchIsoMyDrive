@@ -30,7 +30,7 @@ uses
         Dialogs, ExtCtrls, StdCtrls, ComCtrls, Buttons, Menus, clocale,
         uDevice, LCLIntf, InterfaceBase, LCLType, EditBtn, CTypes, Contnrs,
         uDeviceInfoForm, uResources, uChecksumsForm, uMountForm, uMntIso,
-        uCloneDeviceForm,DateUtils;
+        uCloneDeviceForm, uFormatForm, DateUtils;
 
 type
 
@@ -62,8 +62,9 @@ type
                 MainMenu: TMainMenu;
                 menuFile: TMenuItem;
                 menuFileOpenISO: TMenuItem;
+                menuToolDeviceFormat: TMenuItem;
                 menuToolDevice: TMenuItem;
-                menuToolCloneDevice: TMenuItem;
+                menuToolDeviceClone: TMenuItem;
                 menuToolISOMount: TMenuItem;
                 MenuItem2: TMenuItem;
                 menuToolsISO: TMenuItem;
@@ -84,7 +85,8 @@ type
                 procedure lstBoxDevicesSelectionChange(Sender: TObject; User: boolean);
                 procedure menuFileClick(Sender: TObject);
                 procedure menuFileOpenISOClick(Sender: TObject);
-                procedure menuToolCloneDeviceClick(Sender: TObject);
+                procedure menuToolDeviceCloneClick(Sender: TObject);
+                procedure menuToolDeviceFormatClick(Sender: TObject);
                 procedure menuToolISOChecksumsClick(Sender: TObject);
                 procedure menuToolISOMountClick(Sender: TObject);
                 procedure menuToolsClick(Sender: TObject);
@@ -643,7 +645,6 @@ begin
                 menuFileOpenISO.Enabled := False;
                 menuQuit.Enabled := False;
         end;
-
 end;
 
 procedure TMainForm.menuFileOpenISOClick(Sender: TObject);
@@ -651,7 +652,7 @@ begin
         btnIsoOpenClick(nil);
 end;
 
-procedure TMainForm.menuToolCloneDeviceClick(Sender: TObject);
+procedure TMainForm.menuToolDeviceCloneClick(Sender: TObject);
 var
         dev : PDeviceProperty;
         dlgSaveIso : TSaveDialog;
@@ -673,6 +674,19 @@ begin
             CloneDeviceForm.Free;
         end;
         dlgSaveIso.Free;
+end;
+
+procedure TMainForm.menuToolDeviceFormatClick(Sender: TObject);
+var
+   dev : PDeviceProperty;
+begin
+     dev := hashDevices.Find(hashDevices.NameOfIndex(lstBoxDevices.ItemIndex));
+     Assert(Assigned(dev));
+
+     FormatForm := TFormatForm.Create(Self);
+     FormatForm.dev := dev;
+     FormatForm.ShowModal;
+     FreeAndNil(FormatForm);
 end;
 
 procedure TMainForm.menuToolISOChecksumsClick(Sender: TObject);
@@ -720,11 +734,13 @@ begin
 
         if (copyRunning = False) and (lstBoxDevices.Count > 0) then
         begin
-                menuToolCloneDevice.Enabled := True;
+                menuToolDeviceFormat.Enabled := True;
+                menuToolDeviceClone.Enabled := True;
         end
         else
         begin
-                menuToolCloneDevice.Enabled := False;
+                menuToolDeviceFormat.Enabled := False;
+                menuToolDeviceClone.Enabled := False;
         end;
 end;
 

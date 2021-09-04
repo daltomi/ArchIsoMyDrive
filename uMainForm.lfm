@@ -3566,9 +3566,13 @@ object MainForm: TMainForm
       end
       object menuToolDevice: TMenuItem
         Caption = 'Device'
-        object menuToolCloneDevice: TMenuItem
+        object menuToolDeviceFormat: TMenuItem
+          Caption = 'Format...'
+          OnClick = menuToolDeviceFormatClick
+        end
+        object menuToolDeviceClone: TMenuItem
           Caption = 'Clone to...'
-          OnClick = menuToolCloneDeviceClick
+          OnClick = menuToolDeviceCloneClick
         end
       end
     end

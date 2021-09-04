@@ -35,9 +35,15 @@
         <Item9 Value="ISO:"/>
       </ExcludedOriginals>
     </i18n>
+    <MacroValues Count="1">
+      <Macro2 Name="LCLWidgetType" Value="qt5"/>
+    </MacroValues>
     <BuildModes Count="2">
       <Item1 Name="Debug" Default="True"/>
       <Item2 Name="Release">
+        <MacroValues Count="1">
+          <Macro2 Name="LCLWidgetType" Value="qt5"/>
+        </MacroValues>
         <CompilerOptions>
           <Version Value="11"/>
           <Target>
@@ -70,7 +76,7 @@
       </Item2>
       <SharedMatrixOptions Count="2">
         <Item1 ID="012876019487" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt"/>
-        <Item2 ID="556680892375" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt5"/>
+        <Item2 ID="556680892375" Modes="Debug,Release" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt5"/>
       </SharedMatrixOptions>
     </BuildModes>
     <PublishOptions>
@@ -88,7 +94,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="10">
+    <Units Count="11">
       <Unit0>
         <Filename Value="uArchIsoMyDrive.pas"/>
         <IsPartOfProject Value="True"/>
@@ -145,6 +151,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit9>
+      <Unit10>
+        <Filename Value="uFormatForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormatForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit10>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
