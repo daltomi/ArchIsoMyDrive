@@ -25,7 +25,7 @@ interface
 uses SysUtils;
 
 const
-        APP_VER = '6.0';
+        APP_VER = '6.1';
         APP_TITLE = 'ArchIsoMyDrive';
 {$ifopt D+}
         APP_TITLE_VER = APP_TITLE + ' v' + APP_VER + ' (devel)';
