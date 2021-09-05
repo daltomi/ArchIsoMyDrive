@@ -39,11 +39,19 @@ Sólo para GNU/Linux.
 <img src="https://github.com/daltomi/ArchIsoMyDrive/raw/master/screenshot/format.jpg"/>
 
 
+### Dependencias:
+
+* Librerías: `librhash`, `libudev`, `libmount`, `libblkid`.
+
+* Programas: `sfdisk`, `bash` y `mkfs.*`
+
+
 **Administrador**
 
 Se necesitan permisos de administrador para usar el programa.
 
 
+---
 
 ### Desarrollo
 
@@ -51,15 +59,11 @@ Se utiliza un _mix_ entre **C99** y **FreePascal** utilizando el IDE **Lazarus**
 
 **Interfaz Gráfica**
 
-Según el paquete de Lazarus que se instale la de **GTK2** o **Qt5**. Vea: `pacman -Ss lazarus`
+Según el paquete de Lazarus que se instale la de **GTK2** o **Qt5**.
 
 **Librerías, dependencias**
 
-Se utiliza _librhash_, _libudev_ , _libmount_ , _libblkid_ y afines a los mismos, `fpc`, `lazarus`, `pgkconf`, `make`, `gcc`.
-
-** Programas externos **
-
-Los programas externos se utilizan con la herramienta *Formato...*: `sfdisk`, `bash` y `mkfs.*`
+Se utiliza `librhash`, `libudev`, `libmount`, `libblkid` y afines a los mismos, `fpc`, `lazarus`, `pgkconf`, `make`, `gcc`.
 
 **Compilación**
 
