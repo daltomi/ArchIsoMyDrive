@@ -17,4 +17,4 @@ Para más información [visite la wiki](https://github.com/daltomi/ArchIsoMyDriv
 
 Only for GNU/Linux.
 
-For more information visit the wiki
+For more information [visit the wiki](https://github.com/daltomi/ArchIsoMyDrive/wiki/English)
