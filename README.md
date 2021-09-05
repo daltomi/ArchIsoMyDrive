@@ -9,7 +9,7 @@
 
 Sólo para GNU/Linux.
 
-Para más información [visite la wiki](https://github.com/daltomi/ArchIsoMyDrive/wiki/Epa%C3%B1ol)
+Para más información [visite la wiki](https://github.com/daltomi/ArchIsoMyDrive/wiki/Espa%C3%B1ol)
 
 ---
 
