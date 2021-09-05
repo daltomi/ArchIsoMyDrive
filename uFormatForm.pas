@@ -67,7 +67,7 @@ implementation
 { TFormatForm }
 
 const
-     kBinPath = '/sbin/:/usr/bin:/bin';
+     kBinPath = '/bin:/sbin/:/usr/sbin/:/usr/bin';
      kSfdisk  = 'sfdisk';
      kShell   = 'bash';
      kFat     = 'mkfs.vfat';
