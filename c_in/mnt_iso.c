@@ -33,12 +33,12 @@
 } while (0)
 
 typedef struct part_info {
-        blkid_loff_t start;
-        blkid_loff_t size;
+	blkid_loff_t start;
+	blkid_loff_t size;
 	blkid_loff_t offset;
 	int partno;
 	int mounted;
-        char uuid[32];
+	char uuid[32];
 	char target[PATH_MAX];
 } part_info;
 
@@ -46,9 +46,9 @@ typedef struct part_info {
 static struct mnt_iso {
 	blkid_partlist partlst;
 	blkid_probe probe;
-        int partitions;
+	int partitions;
 	char error[200];
-        char *source;
+	char *source;
 } *mnt = NULL;
 
 static part_info *part_info_to_free = NULL;
@@ -58,7 +58,7 @@ void mnt_iso_init(const char *source)
 {
 	assert(NULL != source);
 
-        mnt = calloc(1, sizeof(*mnt));
+	mnt = calloc(1, sizeof(*mnt));
 	assert(NULL != mnt);
 
 	mnt->source = strdup(source);
